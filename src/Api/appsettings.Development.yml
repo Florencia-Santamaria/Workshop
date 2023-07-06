@@ -1,0 +1,14 @@
+DataAccessRegistry:
+ ReadOnlyConnection: "Data Source=DBPEDIDOSDESA.andreani.com.ar;Initial Catalog=Pedidos;Persist Security Info=True;User ID=User_Pedidos;Password=DfHXU1UMG0ghAACqdTkN"
+ TransactionalConnection: "Data Source=DBPEDIDOSDESA.andreani.com.ar;Initial Catalog=Pedidos;Persist Security Info=True;User ID=User_Pedidos;Password=DfHXU1UMG0ghAACqdTkN"
+ ProviderName: System.Data.SqlClient
+
+AMQStreams:
+ BootstrapServer: "SSL://cluster-kafka-bootstrap-amq-streams-test.apps.ocptest.andreani.com.ar:443"
+ SchemaUrl: "http://apicurioregistry.apps.ocptest.andreani.com.ar/apis/ccompat/v6"
+ Protocol: "Ssl"
+ SslCertificateLocation: "./kafka.pem"
+ EnableSslCertificateVerification: false
+ AutoOffsetReset: "Earliest"
+ AutoRegisterSchemas: true
+ maxRetry: 3
